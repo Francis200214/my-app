@@ -11,7 +11,7 @@
                     <i :class="`el-icon-${item.icon}`"></i>
                     <span slot="title">{{ item.label }}</span>
                 </template>
-                <el-menu-item-group v-for="value in item.children" :key="value.name" >
+                <el-menu-item-group v-for="value in item.children" >
                     <el-menu-item index="1-1">{{ value.label }}</el-menu-item>
                 </el-menu-item-group>
 

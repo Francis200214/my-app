@@ -6,13 +6,13 @@
                 <i :class="`el-icon-${item.icon}`"></i>
                 <span slot="title">{{ item.label }}</span>
             </el-menu-item>
-            <el-submenu v-for="item in hasChildren" :key="item.label" index="2">
+            <el-submenu  index="2">
                 <template slot="title">
-                    <i :class="`el-icon-${item.icon}`"></i>
-                    <span slot="title">{{ item.label }}</span>
+                    <i class="el-icon-location"></i>
+                    <span slot="title">导航一</span>
                 </template>
-                <el-menu-item-group v-for="value in item.children" :key="value.name" >
-                    <el-menu-item index="1-1">{{ value.label }}</el-menu-item>
+                <el-menu-item-group>
+                    <el-menu-item index="1-1">选项1</el-menu-item>
                 </el-menu-item-group>
 
             </el-submenu>
