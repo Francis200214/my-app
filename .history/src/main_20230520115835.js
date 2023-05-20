@@ -6,7 +6,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.config.productionTip = false
 
 // 全局引入Element UI
-Vue.use(ElementUI);
+// Vue.use(ElementUI);
 
 // 按需引入
 // Vue.use(Row);
