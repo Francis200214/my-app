@@ -2,7 +2,7 @@
     <div>
         <el-container>
         <el-aside width="200px">
-            <common-aside/>
+            <commonAside/>
         </el-aside>
         <el-container>
             <el-header>Header</el-header>
@@ -14,14 +14,14 @@
     </div>
 </template>
 <script>
-import CommonAside from '../components/CommonAside.vue'
+import commonAside from '../components/CommonAside.vue'
 
 export default {
     data() {
         return {}
     },
     components: {
-        CommonAside
+        commonAside
     }
 }
 </script>
