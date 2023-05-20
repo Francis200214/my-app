@@ -37,9 +37,6 @@
         color: #fff;
         text-align: center;
         line-height: 48px;
-        font-size: 16px;
-        // 字体粗细
-        font-weight: 400;
     }
 }
 </style>

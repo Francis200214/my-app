@@ -4,8 +4,8 @@
   </div>
 </template>
 
-<style lang="less">
-  html,body,h3 {
+<style lang="less" scope>
+  html,body {
     margin: 0;
     padding: 0;
   }

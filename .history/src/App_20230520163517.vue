@@ -4,11 +4,12 @@
   </div>
 </template>
 
-<style lang="less">
-  html,body,h3 {
-    margin: 0;
-    padding: 0;
-  }
+<style lang="less" scoped>
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 </style>
 
 <script>

@@ -24,7 +24,7 @@
     </div>
 </template>
 
-<style lang="less" scope>
+<style>
 .el-menu-vertical-demo:not(.el-menu--collapse) {
     width: 200px;
     min-height: 400px;
@@ -32,15 +32,6 @@
 
 .el-menu {
     height: 100vh;
-
-    h3 {
-        color: #fff;
-        text-align: center;
-        line-height: 48px;
-        font-size: 16px;
-        // 字体粗细
-        font-weight: 400;
-    }
 }
 </style>
 

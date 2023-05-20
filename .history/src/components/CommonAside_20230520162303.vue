@@ -1,10 +1,10 @@
 <template>
     <div>
         <el-menu default-active="1-4-1" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose"
-            :collapse="isCollapse" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
-
-            <h3>通用后台管理系统</h3>
-
+            :collapse="isCollapse"
+            background-color="#545c64"
+            text-color="#fff"
+            active-text-color="#ffd04b">
             <el-menu-item v-for="item in noChildren" :key="item.name" :index="item.name">
                 <i :class="`el-icon-${item.icon}`"></i>
                 <span slot="title">{{ item.label }}</span>
@@ -24,24 +24,12 @@
     </div>
 </template>
 
-<style lang="less" scope>
+<style>
 .el-menu-vertical-demo:not(.el-menu--collapse) {
     width: 200px;
     min-height: 400px;
 }
-
-.el-menu {
-    height: 100vh;
-
-    h3 {
-        color: #fff;
-        text-align: center;
-        line-height: 48px;
-        font-size: 16px;
-        // 字体粗细
-        font-weight: 400;
-    }
-}
+.el
 </style>
 
 <script>
