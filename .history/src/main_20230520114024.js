@@ -5,7 +5,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.config.productionTip = false
 
-// 全局注入Element UI
+// 全局注入
 Vue.use(ElementUI);
 
 new Vue({
