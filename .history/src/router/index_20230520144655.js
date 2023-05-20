@@ -14,12 +14,10 @@ const routes = [
     {
         path: '/',
         component: Main,
-        children: [
-            { path: '/home', component: Home },
-            { path: '/user', component: User }
-        ]
+        chi
     }
-
+    { path: '/home', component: Home },
+    { path: '/user', component: User }
 ]
 
 // 3、创建Router实例

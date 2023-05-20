@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 // 1、引入组件
-import Main from '../views/Main.vue'
+import Home from '../views/Home.vue'
 import Home from '../views/Home.vue'
 import User from '../views/User.vue'
 
@@ -11,15 +11,8 @@ Vue.use(VueRouter);
 
 // 2、路由与组件映射
 const routes = [
-    {
-        path: '/',
-        component: Main,
-        children: [
-            { path: '/home', component: Home },
-            { path: '/user', component: User }
-        ]
-    }
-
+    { path: '/home', component: Home },
+    { path: '/user', component: User }
 ]
 
 // 3、创建Router实例

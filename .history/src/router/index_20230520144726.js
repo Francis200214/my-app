@@ -16,10 +16,10 @@ const routes = [
         component: Main,
         children: [
             { path: '/home', component: Home },
-            { path: '/user', component: User }
+    { path: '/user', component: User }
         ]
     }
-
+    
 ]
 
 // 3、创建Router实例

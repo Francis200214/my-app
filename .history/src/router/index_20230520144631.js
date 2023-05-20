@@ -12,14 +12,10 @@ Vue.use(VueRouter);
 // 2、路由与组件映射
 const routes = [
     {
-        path: '/',
-        component: Main,
-        children: [
-            { path: '/home', component: Home },
-            { path: '/user', component: User }
-        ]
+        
     }
-
+    { path: '/home', component: Home },
+    { path: '/user', component: User }
 ]
 
 // 3、创建Router实例

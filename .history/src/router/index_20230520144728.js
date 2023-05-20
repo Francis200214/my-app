@@ -19,7 +19,7 @@ const routes = [
             { path: '/user', component: User }
         ]
     }
-
+    
 ]
 
 // 3、创建Router实例
