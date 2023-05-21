@@ -1,13 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-import ElementUI from 'element-ui'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 
-// ElementUI 按需引入
-// import { Button,Row } from 'element-ui'
-
-
-import 'element-ui/lib/theme-chalk/index.css'
-// Vue-Router
 import router from './router'
 // Vuex
 import store from './store'
@@ -26,6 +21,5 @@ Vue.use(ElementUI);
 
 new Vue({
   router,
-  store,
   render: h => h(App),
 }).$mount('#app')

@@ -23,7 +23,7 @@
 <script>
 import CommonAside from '../components/CommonAside.vue'
 import CommonHeader from '../components/CommonHeader.vue'
-
+import CommonHeader from './store/CommonHeader.vue'
 
 export default {
     data() {
