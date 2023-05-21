@@ -9,14 +9,12 @@
                         <p class="access">超级管理员</p>
                     </div>
                 </div>
-
                 <div class="login-info">
                     <p>上次登录时间：<span>2021-09-17</span></p>
                     <p>上次登录地点：<span>济南</span></p>
                 </div>
             </el-card>
         </el-col>
-
         <el-col :span="16">
             <div class="grid-content bg-purple-light"></div>
         </el-col>
@@ -30,7 +28,7 @@
     align-items: center;
     padding-bottom: 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
+    border
 
     img {
         width: 150px;

@@ -9,28 +9,20 @@
                         <p class="access">超级管理员</p>
                     </div>
                 </div>
-
-                <div class="login-info">
-                    <p>上次登录时间：<span>2021-09-17</span></p>
-                    <p>上次登录地点：<span>济南</span></p>
-                </div>
+                <div class="login-info"></div>
             </el-card>
         </el-col>
-
         <el-col :span="16">
             <div class="grid-content bg-purple-light"></div>
         </el-col>
     </el-row>
 </template>
-
 <style lang="less" scoped>
 .user {
     display: flex;
     // flex 布局中 主轴垂直居中
     align-items: center;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
+
 
     img {
         width: 150px;
@@ -42,16 +34,11 @@
     .userinfo {
         .name {
             font-size: 32px;
-            margin-bottom: 10px;
-        }
-
-        .access {
-            color: #999999;
+            margin-
         }
     }
 }
 </style>
-
 <script>
 export default {
     data() {

@@ -16,7 +16,6 @@
                 </div>
             </el-card>
         </el-col>
-
         <el-col :span="16">
             <div class="grid-content bg-purple-light"></div>
         </el-col>
