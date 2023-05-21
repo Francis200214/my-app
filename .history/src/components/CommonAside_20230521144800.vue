@@ -28,10 +28,8 @@
     width: 200px;
     min-height: 400px;
 }
-
 .el-menu {
     height: 100vh;
-
     h3 {
         color: #fff;
         text-align: center;
@@ -119,7 +117,7 @@ export default {
             return this.menuData.filter(item => item.children)
         },
         isCollapse() {
-            return this.$store.state.tab.isCollapse
+            return this.$store.tab.isCollapse
         }
     }
 }

@@ -18,6 +18,7 @@
                 <el-menu-item-group v-for="subItem in item.children" :key="subItem.path">
                     <el-menu-item @click="clickMenu(subItem)" :index="subItem.path">{{ subItem.label }}</el-menu-item>
                 </el-menu-item-group>
+
             </el-submenu>
         </el-menu>
     </div>
@@ -47,6 +48,7 @@
 export default {
     data() {
         return {
+
             menuData: [
                 {
                     path: '/',
@@ -119,7 +121,7 @@ export default {
             return this.menuData.filter(item => item.children)
         },
         isCollapse() {
-            return this.$store.state.tab.isCollapse
+            return this.$store.tab.isCollapse
         }
     }
 }
