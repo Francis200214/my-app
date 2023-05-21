@@ -19,6 +19,9 @@
 .el-header {
     padding: 0;
 }
+.el-menu {
+    border-right: ;
+}
 </style>
 <script>
 import CommonAside from '../components/CommonAside.vue'

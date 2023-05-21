@@ -19,6 +19,7 @@
 .el-header {
     padding: 0;
 }
+
 </style>
 <script>
 import CommonAside from '../components/CommonAside.vue'

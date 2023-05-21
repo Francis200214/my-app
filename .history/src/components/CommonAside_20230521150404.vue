@@ -31,7 +31,7 @@
 
 .el-menu {
     height: 100vh;
-    border-right: none;
+    
 
     h3 {
         color: #fff;
