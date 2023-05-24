@@ -11,8 +11,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import router from './router'
 // Vuex
 import store from './store'
-// Mock
-import './api/mock'
+// 
 
 
 Vue.config.productionTip = false

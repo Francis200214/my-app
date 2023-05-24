@@ -12,7 +12,7 @@ import router from './router'
 // Vuex
 import store from './store'
 // Mock
-import './api/mock'
+import './api'
 
 
 Vue.config.productionTip = false

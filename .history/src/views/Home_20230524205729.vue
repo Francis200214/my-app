@@ -38,7 +38,6 @@
 </template>
 
 <script>
-import { getData } from '../api'
 export default {
     data() {
         return {
@@ -125,11 +124,6 @@ export default {
                 },
             ],
         }
-    },
-    mounted() {
-        getData().then((data) => {
-            console.log('data', data)
-        })
     }
 }
 </script>
@@ -174,9 +168,9 @@ export default {
 }
 
 .num {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
 
     .icon {
         width: 80px;

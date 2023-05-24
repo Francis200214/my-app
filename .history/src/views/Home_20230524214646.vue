@@ -126,7 +126,7 @@ export default {
             ],
         }
     },
-    mounted() {
+    method() {
         getData().then((data) => {
             console.log('data', data)
         })
