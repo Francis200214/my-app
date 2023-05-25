@@ -1,6 +1,6 @@
 <template>
     <el-row>
-        <el-col :span="8" style="padding-right: 10px">
+        <el-col :span="8">
             <el-card class="box-card">
                 <div class="user">
                     <img src="../assets/images/user.png" alt="">
@@ -23,7 +23,7 @@
             </el-card>
         </el-col>
 
-        <el-col :span="16" style="padding-left: 10px">
+        <el-col :span="16">
             <div class="num">
                 <el-card v-for="item in countData" :key="item.name" :body-style="{ display: 'flex', padding: 0 }">
                     <i class="icon" :class="`el-icon-${item.icon}`" :style="{ background: item.color }"></i>
@@ -33,24 +33,12 @@
                     </div>
                 </el-card>
             </div>
-
-            <el-card style="height: 280px">
-                <!-- 折线图 -->
-                <div ref="echarts1" style="height: 280px"></div>
-            </el-card>
-
-            <div class="graph">
-                <el-card></el-card>
-                <el-card></el-card>
-            </div>
         </el-col>
     </el-row>
 </template>
 
 <script>
 import { getData } from '../api'
-import * as echarts from 'echarts'
-
 export default {
     data() {
         return {
@@ -104,38 +92,9 @@ export default {
     mounted() {
         getData().then(({ data }) => {
             const { tableData } = data.data
-            this.tableData = tableData
-
-
-            // echarts折线图
-            var ecahrts1Option = {}
-            // 处理X轴
-            const { orderData } = data.data
-
-            const xAxis = Object.keys(orderData.data[0])
-            const xAxisData = {
-                data: xAxis
-            }
-            ecahrts1Option.xAxis = xAxisData
-            ecahrts1Option.yAxis = {}
-            ecahrts1Option.legend = xAxisData
-
-            ecahrts1Option.series = []
-            xAxis.forEach(key => {
-                ecahrts1Option.series.push({
-                    name: key,
-                    data: orderData.data.map(item => item[key]),
-                    type: 'line'
-                })
-            })
-
-            // 基于准备好的dom，初始化echarts实例
-            const echarts1 = echarts.init(this.$refs.echarts1)
-            // 根据配置显示图表
-            echarts1.setOption(ecahrts1Option);
-
+            console.log('tableData', tableData)
+            this.tableData = 
         })
-
     }
 }
 </script>
@@ -215,17 +174,6 @@ export default {
     .el-card {
         width: 32%;
         margin-bottom: 20px;
-    }
-}
-
-.graph {
-    display: flex;
-    justify-content: space-between;
-
-    .el-card {
-        height: 260px;
-        width: 48%;
-        margin-top: 20px;
     }
 }
 </style>

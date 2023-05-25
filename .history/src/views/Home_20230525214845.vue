@@ -36,7 +36,7 @@
 
             <el-card style="height: 280px">
                 <!-- 折线图 -->
-                <div ref="echarts1" style="height: 280px"></div>
+                <div ref="echarts1"></div>
             </el-card>
 
             <div class="graph">
@@ -105,37 +105,34 @@ export default {
         getData().then(({ data }) => {
             const { tableData } = data.data
             this.tableData = tableData
-
-
-            // echarts折线图
-            var ecahrts1Option = {}
-            // 处理X轴
-            const { orderData } = data.data
-
-            const xAxis = Object.keys(orderData.data[0])
-            const xAxisData = {
-                data: xAxis
-            }
-            ecahrts1Option.xAxis = xAxisData
-            ecahrts1Option.yAxis = {}
-            ecahrts1Option.legend = xAxisData
-
-            ecahrts1Option.series = []
-            xAxis.forEach(key => {
-                ecahrts1Option.series.push({
-                    name: key,
-                    data: orderData.data.map(item => item[key]),
-                    type: 'line'
-                })
-            })
-
-            // 基于准备好的dom，初始化echarts实例
-            const echarts1 = echarts.init(this.$refs.echarts1)
-            // 根据配置显示图表
-            echarts1.setOption(ecahrts1Option);
-
         })
+        // 基于准备好的dom，初始化echarts实例
+        const echarts1 = echarts.init(this.$refs.echarts1)
+        // 处理X轴
+        const { orderData } = data.data
 
+        
+
+        var option = {
+            title: {
+                text: 'ECharts 入门示例'
+            },
+            tooltip: {},
+            legend: {
+                data: ['销量']
+            },
+            xAxis: {
+                data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
+            },
+            yAxis: {},
+            series: [
+                {
+                    name: '销量',
+                    type: 'bar',
+                    data: [5, 20, 36, 10, 10, 20]
+                }
+            ]
+        }
     }
 }
 </script>

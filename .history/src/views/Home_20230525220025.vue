@@ -106,7 +106,8 @@ export default {
             const { tableData } = data.data
             this.tableData = tableData
 
-
+            // 基于准备好的dom，初始化echarts实例
+            const echarts1 = echarts.init(this.$refs.echarts1)
             // echarts折线图
             var ecahrts1Option = {}
             // 处理X轴
@@ -129,10 +130,8 @@ export default {
                 })
             })
 
-            // 基于准备好的dom，初始化echarts实例
-            const echarts1 = echarts.init(this.$refs.echarts1)
             // 根据配置显示图表
-            echarts1.setOption(ecahrts1Option);
+            myChart.setOption(option);
 
         })
 
